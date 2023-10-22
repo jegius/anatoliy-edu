@@ -1,4 +1,77 @@
+:root {
+    --home: url("../image/introduce.png");
+    --logo: url("../image/logo.png");
+    --navigation-text-color: #ffffff;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
+main {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    margin: 0;
+    padding: 0;
+}
+
+input{   /* Отключаем стили по умолчанию*/
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.introduce{
+    background: var(--home) no-repeat;
+    width: 100vw;
+    height: 714px;
+    position: absolute;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "spartan",sans-serif  ;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    }
+
+.navigation__list{
+    display: flex;
+    justify-content: space-between; /*Что то пытаюсь делать в блоке навигации*/
+    list-style: none; /* Убрал точки  как в мастер классе*/
+}
+
+.logo{
+    background: var(--logo);
+    width: 104px;
+    height: 30px;
+}
 
 
