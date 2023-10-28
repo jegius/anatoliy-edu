@@ -1,8 +1,10 @@
 :root {
     --home: url("../image/introduce.png");
     --logo: url("../image/logo.png");
-    --navigation-text-color: #ffffff;
+    --white: #ffffff;
 }
+/*сдесь скидывали стили по умолчанию*/
+/*________________________________________________*/
 
 body {
     margin: 0;
@@ -29,7 +31,7 @@ head {
     padding: 0;
 }
 
-input{   /* Отключаем стили по умолчанию*/
+input{
     margin: 0;
     padding: 0;
     border: none;
@@ -44,12 +46,13 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+/*закончили скидывать стили по умолчанию, теперь задаем новые стили*/
+/*___________________________________________________________________*/
 .introduce{
-    background: var(--home) no-repeat;
+    background: var(--home) no-repeat; /*назначили это изображение бекграундом*/
     width: 100vw;
     height: 714px;
-    position: absolute;
+    position: relative;
 }
 
 .navigation{
@@ -57,21 +60,72 @@ a{
     justify-content: center;
     align-items: center;
     font-family: "spartan",sans-serif  ;
-    color: white;
+    color: var(--white);
     font-weight: 500;
     font-size: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 1136px;
+    height: 64px;
+    top: 27px;
+    left: 139px;
     }
 
 .navigation__list{
     display: flex;
-    justify-content: space-between; /*Что то пытаюсь делать в блоке навигации*/
+    justify-content:space-between; /*Что то пытаюсь делать в блоке навигации*/
     list-style: none; /* Убрал точки  как в мастер классе*/
-}
-
-.logo{
+    box-sizing: content-box;
     background: var(--logo);
-    width: 104px;
+    width: 500px;
     height: 30px;
+    }
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;}
+
+.Home{
+    position: fixed;
+    display: flex;
+    width: 626px;
+    height: 263px;
+    top: 225px;
+    left: 407px;
 }
 
+.home__tatle{
+    position: fixed;
+    width: 350px;
+    height: 20px;
+    top: 225px;
+    left: 545px;
+   color: var(--white);
+    font-family: "popins",sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.home__text{
+    top: 265px;
+    left: 407px;
+    height: 150px;
+    width: 626px;
+    font-family: "popins",sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    align-self: center;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    }
+
+.home__button{
+    top: 440px;
+    left: 633px;
+    width: 175px;
+    height: 48px;
+    justify-content: center;
+    position: fixed;
+}
 
