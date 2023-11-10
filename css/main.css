@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=League+Spartan:wght@500;700&family=Poppins:wght@500;600&display=swap');
+
 :root {
     --home: url("../image/introduce.png");
     --logo: url("../image/logo.png");
     --white: #ffffff;
-}
-/*сдесь скидывали стили по умолчанию*/
-/*________________________________________________*/
+    --button-color: #ff4343;
+    --home-button-color:  #ff4343;
+    }
 
 body {
     margin: 0;
@@ -46,86 +48,100 @@ a{
     text-decoration: none;
     color: inherit;
 }
-/*закончили скидывать стили по умолчанию, теперь задаем новые стили*/
-/*___________________________________________________________________*/
+
 .introduce{
-    background: var(--home) no-repeat; /*назначили это изображение бекграундом*/
+    background: var(--home) no-repeat;
     width: 100vw;
     height: 714px;
     position: relative;
 }
-
+/*=================================================*/
 .navigation{
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: "spartan",sans-serif  ;
+    font-family: "League Spartan",sans-serif  ;
     color: var(--white);
     font-weight: 500;
     font-size: 16px;
     box-sizing: border-box;
-    position: fixed;
-    width: 1136px;
-    height: 64px;
+    position: relative;
     top: 27px;
-    left: 139px;
-    }
+    align-items: center;
+    gap: 28px;
+     }
 
 .navigation__list{
     display: flex;
-    justify-content:space-between; /*Что то пытаюсь делать в блоке навигации*/
-    list-style: none; /* Убрал точки  как в мастер классе*/
-    box-sizing: content-box;
-    background: var(--logo);
-    width: 500px;
-    height: 30px;
-    }
-.logo{
-    position: fixed;
-    top: 10px;
-    left: 10px;}
+    justify-content: center;
+    list-style: none;
+    box-sizing: border-box;
+    gap: 40px;
+    white-space: nowrap;
+         }
 
-.Home{
-    position: fixed;
+.navigation__button{
+    color: var(--white);
+    padding: 8px 16px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    font-family: "League Spartan", sans-serif ;
+    font-size: 16px;
+  }
+
+.logo{
+    position: relative;
+    right: 120px;
+    width: 104px;
+    height: 30px;
+    box-sizing: content-box;
+    background: var(--logo)  no-repeat;
+
+    }
+
+.Home {
+    position: relative;
     display: flex;
     width: 626px;
     height: 263px;
+    justify-content: center;
+    color: var(--white);
+   left: 407px;
     top: 225px;
-    left: 407px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.home__tatle{
-    position: fixed;
+.home__title{
+    display: flex;
     width: 350px;
     height: 20px;
-    top: 225px;
-    left: 545px;
-   color: var(--white);
     font-family: "popins",sans-serif;
     font-weight: 600;
     font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
 }
 
 .home__text{
-    top: 265px;
-    left: 407px;
-    height: 150px;
-    width: 626px;
     font-family: "popins",sans-serif;
     font-weight: 700;
     font-size: 52px;
-    align-self: center;
-    position: fixed;
-    justify-content: center;
     display: flex;
+    box-sizing: content-box;
     }
 
 .home__button{
-    top: 440px;
-    left: 633px;
+    display: flex;
+    padding: 14px 28px;
+    color: var(--white);
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+    background-color: var(--button-color);
     width: 175px;
     height: 48px;
+    font-family: "Poppins" ,sans-serif ;
     justify-content: center;
-    position: fixed;
-}
+      }
 
