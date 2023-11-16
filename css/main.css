@@ -6,7 +6,8 @@
     --white: #ffffff;
     --button-color: #ff4343;
     --home-button-color:  #ff4343;
-    }
+    --welcome__minus: url("../image/Minus.png");
+   }
 
 body {
     margin: 0;
@@ -103,7 +104,6 @@ a{
     display: flex;
     width: 626px;
     height: 263px;
-    justify-content: center;
     color: var(--white);
    left: 407px;
     top: 225px;
@@ -113,8 +113,6 @@ a{
 
 .home__title{
     display: flex;
-    width: 350px;
-    height: 20px;
     font-family: "popins",sans-serif;
     font-weight: 600;
     font-size: 12px;
@@ -129,6 +127,7 @@ a{
     font-size: 52px;
     display: flex;
     box-sizing: content-box;
+    text-align: center;
     }
 
 .home__button{
@@ -144,4 +143,34 @@ a{
     font-family: "Poppins" ,sans-serif ;
     justify-content: center;
       }
+
+.section__2{
+    display: flex;
+   box-sizing: border-box;
+    position: relative;
+    gap: 16px;
+    width: 360px;
+    justify-content: center;
+  }
+
+.welcome{
+    display: flex;
+    position: relative;
+    top: 48px;
+    left: 400px;
+    box-sizing: border-box;
+    height: 248px;
+    width: 640px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.welcome__minus{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background: var(--welcome__minus);
+}
 
