@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=League+Spartan:wght@500;700&family=Poppins:wght@500;600&display=swap');
+
 :root {
     --home: url("../image/introduce.png");
     --logo: url("../image/logo.png");
-    --navigation-text-color: #ffffff;
+    --white: #ffffff;
+    --button-color: #ff4343;
+    --home-button-color: #ff4343;
+    --section3-color: #EEF3F9;
+    --line-segregator: url("../image/Minus.png");
+    --section3__diagonal: url("../image/Diagonal.png");
+    --section__pictures-image1: url("../image/Image 1 .png");
+    --section__pictures-image2: url("../image/Image 2.png");
+    --section__pictures-image3: url("../image/Image 3.png");
+    --section__pictures-image4: url("../image/Image 4.png");
+    --section__pictures-image5: url("../image/Image 5.png");
+    --section__pictures-image6: url("../image/Image 6.png");
 }
 
 body {
@@ -29,7 +42,7 @@ head {
     padding: 0;
 }
 
-input{   /* Отключаем стили по умолчанию*/
+input {
     margin: 0;
     padding: 0;
     border: none;
@@ -40,38 +53,204 @@ input{   /* Отключаем стили по умолчанию*/
     appearance: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.introduce{
-    background: var(--home) no-repeat;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
-    height: 714px;
-    position: absolute;
 }
 
-.navigation{
+.introduce {
+    display: flex;
+    flex-direction: column;
+    background: var(--home) center no-repeat;
+    width: 100%;
+    height: 714px;
+    justify-content: center;
+    /*gap:134px;*/
+}
+
+.navigation {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: "spartan",sans-serif  ;
-    color: white;
+    font-family: "League Spartan", sans-serif;
+    color: var(--white);
     font-weight: 500;
     font-size: 16px;
-    }
-
-.navigation__list{
-    display: flex;
-    justify-content: space-between; /*Что то пытаюсь делать в блоке навигации*/
-    list-style: none; /* Убрал точки  как в мастер классе*/
+    position: relative;
+    top: 27px;
+    align-items: center;
+    gap: 28px;
 }
 
-.logo{
-    background: var(--logo);
+.navigation__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    box-sizing: border-box;
+    gap: 40px;
+    white-space: nowrap;
+}
+
+.navigation__button {
+    color: var(--white);
+    padding: 8px 16px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+}
+
+.logo {
+    position: relative;
+    right: 120px;
     width: 104px;
     height: 30px;
+    box-sizing: content-box;
+    background: var(--logo) no-repeat center;
+
 }
+
+.Home {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__title {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.home__text {
+    font-family: "popins", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    display: flex;
+    text-align: center;
+    max-width: 636px;
+}
+
+.home__button {
+    display: flex;
+    padding: 14px 28px;
+    color: var(--white);
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+    background-color: var(--button-color);
+    width: 175px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.section-greetings {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    }
+
+.section-greetings-text {
+    display: flex;
+    width: 360px;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.line-segregator {
+    height: 40px;
+    width: 40px;
+}
+
+.section-greetings-text__line-segregator {
+   background: var(--line-segregator);
+}
+
+.advertisement {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 128px 0px 256px;
+    flex-direction: column;
+    background: var(--section3-color) var(--section3__diagonal) no-repeat  center bottom;
+}
+
+.advertisement-title {
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.advertisement-title__text {
+    align-self: center;
+}
+
+.advertisement-title__line-segregator {
+    background: var(--line-segregator);
+    align-self: center;
+}
+
+.advertisement-pictures {
+    display: flex;
+    min-width: 1136px;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+}
+
+.advertisement-style-image {
+    min-height: 300px;
+    min-width: 362px;
+}
+
+.advertisement-pictures__image1 {
+    background: var(--section__pictures-image1) no-repeat center;
+}
+
+.advertisement-pictures__image2 {
+    background: var(--section__pictures-image2) no-repeat center;
+}
+
+.advertisement-pictures__image3 {
+    background: var(--section__pictures-image3) no-repeat center;
+}
+
+.advertisement-pictures__image4 {
+    background: var(--section__pictures-image4) no-repeat center;
+}
+
+.advertisement-pictures__image5 {
+    background: var(--section__pictures-image5) no-repeat center;
+}
+
+.advertisement-pictures__image6 {
+    background: var(--section__pictures-image6) center no-repeat ;
+}
+
+
+
+
+
 
 
