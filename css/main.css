@@ -7,7 +7,7 @@
     --button-color: #ff4343;
     --home-button-color: #ff4343;
     --section3-color: #EEF3F9;
-    --welcome__minus: url("../image/Minus.png");
+    --line-segregator: url("../image/Minus.png");
     --section3__diagonal: url("../image/Diagonal.png");
     --section__pictures-image1: url("../image/Image 1 .png");
     --section__pictures-image2: url("../image/Image 2.png");
@@ -112,7 +112,7 @@ a {
     width: 104px;
     height: 30px;
     box-sizing: content-box;
-    background: var(--logo) no-repeat;
+    background: var(--logo) no-repeat center;
 
 }
 
@@ -159,38 +159,41 @@ a {
     justify-content: center;
 }
 
-.section__2 {
+.section-greetings {
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: center;
-}
+    }
 
-.welcome {
+.section-greetings-text {
     display: flex;
-    flex-direction: column;
     width: 360px;
     align-items: center;
     text-align: center;
     gap: 16px;
+    flex-direction: column;
 }
 
-.welcome__minus {
+.line-segregator {
     height: 40px;
     width: 40px;
-    background: var(--welcome__minus);
 }
 
-.section3 {
+.section-greetings-text__line-segregator {
+   background: var(--line-segregator);
+}
+
+.advertisement {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 128px 0px 256px;
     flex-direction: column;
-    background: var(--section3-color) var(--section3__diagonal) no-repeat bottom;
+    background: var(--section3-color) var(--section3__diagonal) no-repeat  center bottom;
 }
 
-.section3__title {
+.advertisement-title {
     justify-content: center;
     display: flex;
     gap: 16px;
@@ -198,18 +201,16 @@ a {
     flex-direction: column;
 }
 
-.section3__title-text {
+.advertisement-title__text {
     align-self: center;
 }
 
-.section3__title-minus {
-    background: var(--welcome__minus);
-    height: 40px;
-    width: 40px;
+.advertisement-title__line-segregator {
+    background: var(--line-segregator);
     align-self: center;
 }
 
-.section3__pictures {
+.advertisement-pictures {
     display: flex;
     min-width: 1136px;
     flex-wrap: wrap;
@@ -218,33 +219,33 @@ a {
 
 }
 
-.section3__image-style {
+.advertisement-style-image {
     min-height: 300px;
     min-width: 362px;
 }
 
-.section3__pictures-image1 {
-    background: var(--section__pictures-image1) no-repeat;
+.advertisement-pictures__image1 {
+    background: var(--section__pictures-image1) no-repeat center;
 }
 
-.section3__pictures-image2 {
-    background: var(--section__pictures-image2) no-repeat;
+.advertisement-pictures__image2 {
+    background: var(--section__pictures-image2) no-repeat center;
 }
 
-.section3__pictures-image3 {
-    background: var(--section__pictures-image3) no-repeat;
+.advertisement-pictures__image3 {
+    background: var(--section__pictures-image3) no-repeat center;
 }
 
-.section3__pictures-image4 {
-    background: var(--section__pictures-image4) no-repeat;
+.advertisement-pictures__image4 {
+    background: var(--section__pictures-image4) no-repeat center;
 }
 
-.section3__pictures-image5 {
-    background: var(--section__pictures-image5) no-repeat;
+.advertisement-pictures__image5 {
+    background: var(--section__pictures-image5) no-repeat center;
 }
 
-.section3__pictures-image6 {
-    background: var(--section__pictures-image6) no-repeat;
+.advertisement-pictures__image6 {
+    background: var(--section__pictures-image6) center no-repeat ;
 }
 
 
